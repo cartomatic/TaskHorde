@@ -1,0 +1,42 @@
+wonder if this will make it further than the todo... ;)
+
+backend in node.js me thinks. or an easy but not yet too portable c#
+
+mongodb. maybe redis if needed for something. could each board be a separate db or collection?
+
+client to github / gitlab
+
+task is a github issue
+
+does offer DoD checklists. Checklists perhaps saved in the task description somehow?
+Github does have checklists, but would have to use some sort of tagging for this. html tag should be invisible, but gh may sanitise xml input...
+
+does offer time estimates for a task and also risk specification so can see optimistic and pesimistic estimates. all done in man hrs
+a board shold also have a 'generic' risk value, so can automatically assume there is a margin for estimates.
+
+can calculate estimated delivery times - not necesarily for a task. maybe for a bucket of a board.
+say a bucket is a milestone - so should be able to show total time for a bucket as well as delivery dates.
+
+the same way could calculate estimated delivery dates for the whole board.
+
+finished tasks should not be taken into account, but tasks in progress, intesting should. DoD should also be used to estimate the percentage completed of a task
+
+can store some xtra info such as time actually worked on a task. so can later generate stats and compare estimates with the actual time consumed.
+Should be possible to collect times from different users, so devs, testers, etc can log the time.
+maybe the time logged should also include type of work - dev, testing, etc.
+
+should be designed for agile approach and handle backlog and sprints well. something like easy redmine could be an idea to look at
+some wizard to select tasks in backlog and put them to a sprint.
+creating a sprint == creating a milestone
+
+bucket assignment uses labels of course
+
+make it possible to reference issues (#123) and users (@user) in comments. pretty much as in github
+
+make it possible to add many projects to one board. so a project encompasses for example server, client and api, etc. projects
+
+make it possible to customise columns (buckets) per project (would have to be done for each linked project)
+
+make it possible to assign project specific tags when editing an issue - so p1 sees only own tags, p2 its own tags and so on
+
+for ideas see redmine, trello, easyredmine.
